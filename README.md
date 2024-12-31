@@ -21,4 +21,4 @@
 - @Tanstack/React-Query
 - @Splidejs/React-Splide
 - Tailwindcss
-- s
+  
