@@ -1,6 +1,6 @@
 import { model, Schema } from "mongoose";
 
-// bir belgenin tipi
+
 export interface IUser {
   _id: string;
   username: string;
@@ -15,7 +15,7 @@ export interface IUser {
   updatedAt: Date;
 }
 
-// şema oluştur
+
 const userSchema = new Schema<IUser>(
   {
     username: {
@@ -56,6 +56,5 @@ const userSchema = new Schema<IUser>(
   }
 );
 
-// model oluştur
 
 export default model<IUser>("User", userSchema, "ergun");
