@@ -75,3 +75,4 @@ export const profile = catchAsync(
     res.status(200).json({ message: "Profil bilgileri alındı", user });
   }
 );
+s
