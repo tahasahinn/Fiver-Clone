@@ -7,7 +7,7 @@ type ExtendedError = {
 type Props = {
   info?: Error;
   refetch?: () => void;
-};ı
+};
 
 const Error = ({ info, refetch }: Props) => {
   return (info as ExtendedError)?.response?.data?.message ===
