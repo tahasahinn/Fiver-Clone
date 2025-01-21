@@ -10,7 +10,7 @@ type ContextType = {
   register: (user: IFormUser) => void;
   login: (user: ILoginUser) => void;
   logout: () => void;
-};h
+};
 
 export const AuthContext = createContext<ContextType>({
   user: null,
