@@ -9,7 +9,7 @@ const Input = ({
   required = false,
   max,
   min,
-  multiple,
+  multiple,ı
 }: IInput) => {
   return (
     <div className="mb-5">
