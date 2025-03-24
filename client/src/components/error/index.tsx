@@ -4,7 +4,7 @@ type ExtendedError = {
   };
 } & Error;
 
-type Props = {s
+type Props = {
   info?: Error;
   refetch?: () => void;
 };
