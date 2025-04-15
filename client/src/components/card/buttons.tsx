@@ -4,7 +4,7 @@ import api from "../../api";
 
 type Props = {
   item: IGig;
-};
+};x
 
 const Buttons = ({ item }: Props) => {
   const client = useQueryClient();
