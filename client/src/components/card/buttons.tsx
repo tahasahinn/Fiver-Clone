@@ -8,7 +8,7 @@ type Props = {
 const Buttons = ({ item }: Props) => {
   const client = useQueryClient();
 
-  const { mutate, isPending } = useMutation({x
+  const { mutate, isPending } = useMutation({
     mutationFn: () => api.delete(`/gigs/${item._id}`),
 
     onSuccess: () => {
