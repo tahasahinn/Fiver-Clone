@@ -6,7 +6,7 @@ const errorMiddleware = (
   res: Response,
   next: NextFunction
 ) => {
-  if (err.status) {3
+  if (err.status) {
     console.log("Hata Meydana Geldi");
     console.error("Hata Detayları:", {
       message: err.message || "Bilinmeyen Hata",
