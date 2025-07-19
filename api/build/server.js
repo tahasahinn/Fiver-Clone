@@ -1,7 +1,7 @@
 import express from "express";s
 const app = express();s
 const port = 3000;s
-app.get("/", (req, res) => {s
+app.get("/", (req, res) => {
     res.send("Serverdan MerhabalarR");
     
 });
