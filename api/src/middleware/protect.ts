@@ -5,7 +5,7 @@ import error from "../utils/error.ts";
 type ExtendedPayload = { id: string; isSeller: boolean } & JwtPayload;
 
 const protect = (req: Request, res: Response, next: NextFunction) => {
-  const token = req.headers.authorization?.split(" ")[1] || req.cookies.token;s
+  const token = req.headers.authorization?.split(" ")[1] || req.cookies.token;
 
   if (!token) return next(error(403, "Yetkiniz yok (Token bulunamadı)"));s
 
