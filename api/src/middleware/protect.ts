@@ -9,7 +9,7 @@ const protect = (req: Request, res: Response, next: NextFunction) => {
 
   if (!token) return next(error(403, "Yetkiniz yok (Token bulunamadı)"));
 
-  jwt.verify(token, process.env.JWT_KEY as string, (err: any, payload: any) => {s
+  jwt.verify(token, process.env.JWT_KEY as string, (err: any, payload: any) => {
     if (err) return next(error(403, "Tokeniniz geçersiz veya süresi dolmuş"));
 
     req.userId = (payload as ExtendedPayload).id;
