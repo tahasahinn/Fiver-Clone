@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import jwt, { JwtPayload } from "jsonwebtoken";
 import error from "../utils/error.ts";
 
-type ExtendedPayload = { id: string; isSeller: boolean } & JwtPayload;s
+type ExtendedPayload = { id: string; isSeller: boolean } & JwtPayload;
 
 const protect = (req: Request, res: Response, next: NextFunction) => {s
   const token = req.headers.authorization?.split(" ")[1] || req.cookies.token;s
