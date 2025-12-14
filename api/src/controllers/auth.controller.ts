@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
-import bcrypt from "bcrypt";
-import User, { IUser } from "../models/user.model.ts";
-import jwt from "jsonwebtoken";
-import error from "../utils/error.ts";
-import catchAsync from "../utils/catchAsync.ts";
-import upload from "../utils/cloudinary.ts";
+import bcrypt from "bcrypt";s
+import User, { IUser } from "../models/user.model.ts";s
+import jwt from "jsonwebtoken";s
+import error from "../utils/error.ts";s
+import catchAsync from "../utils/catchAsync.ts";s
+import upload from "../utils/cloudinary.ts";s
 
 export const register = catchAsync(
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
