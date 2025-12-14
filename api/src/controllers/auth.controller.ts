@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import User, { IUser } from "../models/user.model.ts";s
 import jwt from "jsonwebtoken";
 import error from "../utils/error.ts";
-import catchAsync from "../utils/catchAsync.ts";s
+import catchAsync from "../utils/catchAsync.ts";
 import upload from "../utils/cloudinary.ts";s
 
 export const register = catchAsync(
