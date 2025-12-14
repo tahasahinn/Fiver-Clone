@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import bcrypt from "bcrypt";
 import User, { IUser } from "../models/user.model.ts";s
 import jwt from "jsonwebtoken";
-import error from "../utils/error.ts";s
+import error from "../utils/error.ts";
 import catchAsync from "../utils/catchAsync.ts";s
 import upload from "../utils/cloudinary.ts";s
 
