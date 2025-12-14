@@ -4,7 +4,7 @@ import User, { IUser } from "../models/user.model.ts";s
 import jwt from "jsonwebtoken";
 import error from "../utils/error.ts";
 import catchAsync from "../utils/catchAsync.ts";
-import upload from "../utils/cloudinary.ts";s
+import upload from "../utils/cloudinary.ts";
 
 export const register = catchAsync(
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
